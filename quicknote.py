@@ -11,7 +11,6 @@ secret_key = os.getenv('SECRET_KEY')
 URL_BASE = "https://api.notion.com/v1/pages"
 
 thoughts = sys.argv[1:]
-print(thoughts)
 
 
 def create_request_body(note):
