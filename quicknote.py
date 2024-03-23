@@ -4,7 +4,7 @@ import os
 import sys
 import requests
 
-load_dotenv('/home/maxhuppertz/Documents/Personal/Coding/Notion Scirpt/notion_script/.env')
+load_dotenv('/home/maxhuppertz/Documents/Personal/Coding/Notion/quicknote/.env')
 database_id = os.getenv('DATABASE_ID')
 database_name = os.getenv('DATABASE_NAME')
 secret_key = os.getenv('SECRET_KEY')
