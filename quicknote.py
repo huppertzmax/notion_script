@@ -1,9 +1,10 @@
+#!/usr/bin/python3
 from dotenv import load_dotenv
 import os
 import sys
 import requests
 
-load_dotenv()
+load_dotenv('/home/maxhuppertz/Documents/Personal/Coding/Notion Scirpt/notion_script/.env')
 database_id = os.getenv('DATABASE_ID')
 database_name = os.getenv('DATABASE_NAME')
 secret_key = os.getenv('SECRET_KEY')
@@ -35,7 +36,7 @@ def create_request_body(note):
 
 def send_note(request_body):
     headers = {
-        "Authorization": "Bearer " + secret_key,
+        "Authorization": "Bearer " + str(secret_key),
         "Content-Type": "application/json",
         "Notion-Version": "2022-06-28"
     }
